@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/supLayout_Btn04Activity_whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/ll_Btn04Activity_slidingLayout"
+    sothree:umanoOverlay="false"
+    sothree:umanoPanelHeight="60dp"
+    sothree:umanoParallaxOffset="60dp"
+    sothree:umanoShadowHeight="10dp"
+    >
+    <!-- android:gravity="bottom" 决定是从界面顶部滑出还是底部滑出 -->
+    <!-- sothree:umanoDragView="@+id/name" 决定哪个控件可以响应面板滑动事件 -->
+    <!-- sothree:umanoOverlay="true" 面板是否覆盖主界面内容 -->
+    <!-- 你可以把它叠加使用setOverlayed方法或属性umanoOverlay主要内容。这是有用的，如果你想使滑动布局半透明。
+    您还可以设置umanoClipPanel为false，使面板非叠加模式透明 -->
+    <!-- sothree:umanoPanelHeight="68dp" 面板收缩状态时候的预留的高度 -->
+    <!-- sothree:umanoParallaxOffset="100dp"  面板滑动时，主界面跟随滑动的位移距离-->
+    <!-- sothree:umanoScrollableView="@+id/list" 滑动面板中，可执行滑动的View -->
+    <!-- sothree:umanoShadowHeight="4dp" 滑动面板与主界面间的海拔阴影高度-->
+    <!-- sothree:umanoFadeColor="@color/white" 默认面板向上滑动时主要内容变暗;通过更改该属性改变暗淡的颜色-->
+    <!-- Toolbar要设置sothree:theme="@style/ActionBar"，才能实现滑动完成后，让Toolbar隐藏 -->
+    <RelativeLayout
+        android:id="@+id/rl_Btn04Activity_mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_tag"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_tag"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_Btn04Activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                sothree:theme="@style/ActionBar"
+                />
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_expanded"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="展开状态"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_collapsed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="收缩状态"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_hidden"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="隐藏状态"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_anchoredOpen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="打开锚点状态"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_anchoredClose"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="关闭锚点状态"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_changeFadeColor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="改变暗淡颜色"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_bottomGravity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="从底部滑出"/>
+
+            <Button
+                android:id="@+id/btn_Btn04Activity_topGravity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="从顶部滑出"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Btn04Activity_slidingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_Btn04Activity_head"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="滑动布局的头部"
+            />
+
+        <TextView
+            android:id="@+id/tv_Btn04Activity_content1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="滑动布局的内容1"/>
+
+        <TextView
+            android:id="@+id/tv_Btn04Activity_content2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="滑动布局的内容2"/>
+
+        <TextView
+            android:id="@+id/tv_Btn04Activity_content3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="滑动布局的内容3"/>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

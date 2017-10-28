@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ubpost.slidinguppaneldemo2.MainActivity">
+
+    <Button
+        android:id="@+id/btn_main_btn01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="btn01_代码控制"/>
+
+    <Button
+        android:id="@+id/btn_main_btn02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="btn02_代码控制_带滑动布局"/>
+
+    <Button
+        android:id="@+id/btn_main_btn03"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="btn03_XML控制"/>
+
+    <Button
+        android:id="@+id/btn_main_btn04"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="btn04_XML控制_覆盖Toolbar"/>
+</LinearLayout>
